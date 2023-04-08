@@ -1,0 +1,12 @@
+version: '3.4'
+
+services:
+  echo-plain-text-webserver:
+    image: ${DOCKER_REGISTRY-}echoplaintextwebserver
+    build:
+      context: .
+      dockerfile: Echo-Plain-Text-Webserver/Dockerfile
+    environment:
+      - ASPNETCORE_HTTP_PORTS=58080
+    ports:
+      - "58080:58080"
