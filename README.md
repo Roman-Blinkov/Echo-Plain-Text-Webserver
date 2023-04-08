@@ -60,6 +60,25 @@ Example using `curl`:
 curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X POST "http://localhost:58080/testPath?testKey1=testVal1&testKey2=testVal2"
 ```
 
+Example output
+```
+=== Http method ===
+POST
+
+=== Request Url (encoded) ===
+http://localhost:58080/testPath?testKey1=testVal1&testKey2=testVal2
+
+=== Headers ===
+Accept: */*
+Host: localhost:58080
+User-Agent: curl/7.83.1
+Content-Type: application/json
+Content-Length: 34
+
+=== Body ===
+{"key1":"value1", "key2":"value2"}
+```
+
 ## Contributing 🤝
 
 We welcome contributions to improve Echo-Plain-Text-Webserver! Please follow these steps:
